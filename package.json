@@ -5,5 +5,9 @@
   "main": "index.js",
   "repository": "https://github.com/thisdotrob/fishy-ads",
   "author": "thisdotrob <robstevenson000@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "path": "^0.12.7",
+    "webpack": "^2.4.1"
+  }
 }
