@@ -1,0 +1,9 @@
+{
+  "name": "fishy-ads",
+  "version": "0.0.1",
+  "description": "A classifieds app for people who love fish in aquariums (a simple project to let me muck about with React).",
+  "main": "index.js",
+  "repository": "https://github.com/thisdotrob/fishy-ads",
+  "author": "thisdotrob <robstevenson000@gmail.com>",
+  "license": "MIT"
+}
