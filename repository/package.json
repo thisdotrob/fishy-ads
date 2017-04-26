@@ -1,0 +1,14 @@
+{
+  "name": "fishy-ads-repository",
+  "version": "1.0.0",
+  "description": "Repository service for fishy-ads' users' classified ads.",
+  "main": "server.js",
+  "repository": "https://github.com/thisdotrob/fishy-ads",
+  "license": "MIT",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "restify": "^4.3.0"
+  }
+}

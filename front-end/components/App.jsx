@@ -1,34 +1,21 @@
 import React from 'react';
+import 'whatwg-fetch';
 import AdvertList from './AdvertList.jsx';
 
-const advertData = [
-  {
-    species: 'Labidochromis Caeruleus',
-    description: 'Yellow labs for sale',
-    price: 6.00,
-  },
-  {
-    species: 'Pseudotropheus Acei',
-    description: 'Aceis for sale',
-    price: 3.39,
-  },
-  {
-    species: 'Cynotilapia Afra',
-    description: 'Afra Jalo Reef for sale',
-    price: 19.76,
-  },
-  {
-    species: 'Pseudotropheus Polit',
-    description: 'Polits for sale ',
-    price: 34.50,
-  }
-];
-
 class App extends React.Component {
+  constructor() {
+    super();
+    this.state = { advertsData: [] };
+    fetch('http://localhost:3000/adverts')
+      .then(response => response.json())
+      .then(advertsData => this.setState({ advertsData }))
+      .catch(console.log);
+  }
+
   render() {
     return (
      <div style={{textAlign: 'center'}}>
-        <AdvertList advertData={advertData}/>
+        <AdvertList advertsData={this.state.advertsData}/>
       </div>);
   }
 }

@@ -2,9 +2,9 @@ import React from 'react';
 
 import Advert from './Advert.jsx';
 
-const AdvertList = ({advertData}) => {
-  const items = advertData.map(({species, price}) => {
-    return <Advert species={species} price={price}/>
+const AdvertList = ({advertsData}) => {
+  const items = advertsData.map(({species, price}) => {
+    return <Advert species={species} price={price} key={species+price}/>
   })
   return (
     <div>
